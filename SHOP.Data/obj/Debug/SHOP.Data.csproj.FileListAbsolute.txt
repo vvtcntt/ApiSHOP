@@ -1,0 +1,12 @@
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\SHOP.Data.dll.config
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\SHOP.Data.dll
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\SHOP.Data.pdb
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\EntityFramework.dll
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\SHOP.Common.dll
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\SHOP.Common.pdb
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\EntityFramework.xml
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\obj\Debug\SHOP.Data.csprojResolveAssemblyReference.cache
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\obj\Debug\SHOP.Data.dll
+D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Data\obj\Debug\SHOP.Data.pdb
