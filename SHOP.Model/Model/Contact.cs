@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblContact")]
-    class Contact:Auditable
+    public class Contact:Auditable
     {
         public string Address { set; get; }
         public string Mobile { set; get; }

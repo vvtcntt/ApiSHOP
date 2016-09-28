@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblRegister")]
-    class Register:Auditable
+    public class Register:Auditable
     {
         public string Email { set; get; }
         public string Mobile { set; get; }

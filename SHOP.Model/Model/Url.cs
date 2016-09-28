@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblUrl")]
-    class Url:Auditable
+    public class Url:Auditable
     {
         public string Link { set; get; }
         public bool Rel { set; get; }

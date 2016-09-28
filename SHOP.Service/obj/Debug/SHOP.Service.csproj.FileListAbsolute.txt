@@ -20,3 +20,5 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\SHOP.Model.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\obj\Debug\SHOP.Service.csprojResolveAssemblyReference.cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\obj\Debug\SHOP.Service.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\obj\Debug\SHOP.Service.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\EntityFramework.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\EntityFramework.xml

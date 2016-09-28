@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblMaps")]
-    class Maps:Auditable
+    public class Maps:Auditable
     {
 public string Description { set; get; }
         public string Content { set; get; }

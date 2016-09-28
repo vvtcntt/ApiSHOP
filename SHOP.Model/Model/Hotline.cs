@@ -10,7 +10,7 @@ namespace SHOP.Model.Model
 {
     [Table("tblHotline")]
 
-    class Hotline:Auditable
+    public class Hotline:Auditable
     {
         public string Mobile { set; get; }
         public string Holine { set; get; }

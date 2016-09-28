@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblCriteria")]
-    class Criteria:Auditable
+    public class Criteria:Auditable
     {
         public int idCate { set; get; }
         public bool Priority { set; get; }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblGroupChild")]
-    class GroupChild:Auditable
+    public class GroupChild :Auditable
     {
         public string Title { set; get; }
 

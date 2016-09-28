@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblColorProduct")]
-    class ColorProduct:Auditable
+  public class ColorProduct:Auditable
     {
         public string Image { set; get; }
 

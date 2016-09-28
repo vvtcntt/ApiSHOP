@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblRight")]
-    class Right
+    public class Right
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

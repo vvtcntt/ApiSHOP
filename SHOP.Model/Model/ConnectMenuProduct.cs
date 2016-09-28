@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblConnectMenuProduct")]
-    class ConnectMenuProduct
+    public class ConnectMenuProduct
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

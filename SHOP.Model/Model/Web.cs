@@ -3,7 +3,7 @@
 namespace SHOP.Model.Model
 {
     [Table("tblWeb")]
-    internal class Web
+    public class Web
     {
         public int id { set; get; }
         public string Url { set; get; }

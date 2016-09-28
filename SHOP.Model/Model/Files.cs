@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblFiles")]
-    class Files:Auditable
+    public class Files :Auditable
     {
         public string Title { set; get; }
 

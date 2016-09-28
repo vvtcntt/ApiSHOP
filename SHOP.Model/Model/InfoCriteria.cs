@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblInfoCriteria")]
-    class InfoCriteria
+    public class InfoCriteria
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

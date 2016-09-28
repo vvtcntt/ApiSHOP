@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblSupport")]
-    class Support:Auditable
+    public class Support :Auditable
     {
         public string Yahoo { set; get; }
         public string Skyper { set; get; }

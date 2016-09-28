@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblConnectWebs")]
-    class ConnectWebs
+    public class ConnectWebs
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -10,7 +10,7 @@ namespace SHOP.Model.Model
 {
     [Table("tblConnectImages")]
 
-    class ConnectImages
+    public class ConnectImages
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

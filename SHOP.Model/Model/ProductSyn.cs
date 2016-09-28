@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblProductSyn")]
-    class ProductSyn:Auditable
+    public class ProductSyn :Auditable
     {
  
         [Required]

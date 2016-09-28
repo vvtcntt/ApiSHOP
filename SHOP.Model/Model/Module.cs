@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SHOP.Model.Model
 {
     [Table("tblModule")]
-    class Module:Auditable
+    public class Module:Auditable
     {
 
     }

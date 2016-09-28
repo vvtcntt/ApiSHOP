@@ -49,7 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infratructure\DbFactory.cs" />
+    <Compile Include="Infratructure\Disposable.cs" />
+    <Compile Include="Infratructure\IDbFactory.cs" />
+    <Compile Include="Infratructure\IRepository.cs" />
+    <Compile Include="Infratructure\IUnitOfWork.cs" />
+    <Compile Include="Infratructure\RepositoryBase.cs" />
+    <Compile Include="Infratructure\UnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SHOPDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -60,6 +68,13 @@
       <Project>{a1d2e2fb-1e99-4b89-80a0-c5c45da1629e}</Project>
       <Name>SHOP.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SHOP.Model\SHOP.Model.csproj">
+      <Project>{e800a944-164f-4b95-9e36-f76bca3f7520}</Project>
+      <Name>SHOP.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositorie\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

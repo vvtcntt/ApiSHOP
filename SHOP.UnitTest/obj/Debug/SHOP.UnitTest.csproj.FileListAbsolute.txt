@@ -100,3 +100,5 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\System.Web.WebPages.Depl
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\obj\Debug\SHOP.UnitTest.csprojResolveAssemblyReference.cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\obj\Debug\SHOP.UnitTest.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\obj\Debug\SHOP.UnitTest.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.xml
