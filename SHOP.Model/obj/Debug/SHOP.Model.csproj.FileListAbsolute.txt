@@ -8,3 +8,13 @@ D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Model\bin\Debug\EntityFramework.SqlServer.xm
 D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Model\obj\Debug\SHOP.Model.csprojResolveAssemblyReference.cache
 D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Model\obj\Debug\SHOP.Model.dll
 D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Model\obj\Debug\SHOP.Model.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\obj\Debug\SHOP.Model.csprojResolveAssemblyReference.cache
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\obj\Debug\SHOP.Model.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\obj\Debug\SHOP.Model.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\SHOP.Model.dll.config
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\SHOP.Model.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\SHOP.Model.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.SqlServer.xml
