@@ -1,6 +1,7 @@
 ﻿using SHOP.Model.Abstract;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,11 @@ namespace SHOP.Model.Model
 
     public class Hotline:Auditable
     {
+        [Required]
+        [MaxLength(100)]
         public string Mobile { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Holine { set; get; }
     }
 }

@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Abstract\Auditable.cs" />
     <Compile Include="Abstract\IAuditable.cs" />
+    <Compile Include="Abstract\Seotable.cs" />
     <Compile Include="Model\Agency.cs" />
     <Compile Include="Model\Banks.cs" />
     <Compile Include="Model\ColorProduct.cs" />

@@ -24,3 +24,5 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\EntityFramework.SqlServer.xm
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.csprojResolveAssemblyReference.cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.Migrations.InitialDB.resources
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.csproj.GenerateResource.Cache

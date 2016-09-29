@@ -11,6 +11,7 @@ namespace SHOP.Model.Abstract
         public int id { set; get; }
 
         [Required]
+        [MaxLength(200)]
         public string Name { set; get; }
 
         public DateTime DateCreate { set; get; }

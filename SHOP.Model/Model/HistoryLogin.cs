@@ -14,7 +14,11 @@ namespace SHOP.Model.Model
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string FullName { set; get; }
+        [Required]
+        [MaxLength(100)]
         public string Task { set; get; }
         public int idUser { set; get; }
         public DateTime DateCreate { set; get; }

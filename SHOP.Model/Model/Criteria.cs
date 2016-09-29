@@ -14,5 +14,6 @@ namespace SHOP.Model.Model
         public int idCate { set; get; }
         public bool Priority { set; get; }
         public bool Style { set; get; }
+        public virtual IEnumerable<ConnectCriteria> ConnectCriterias { set; get; }
     }
 }

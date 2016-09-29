@@ -10,13 +10,23 @@ namespace SHOP.Model.Model
     {
         public int ParentID { set; get; }
         public virtual IEnumerable<News> News { set; get; }
-        [Required]
-        public string Title { set; get; }
+     
 
+        [Required]
+        [MaxLength(200)]
+        public string Title { set; get; }
+        [Required]
+        [MaxLength(500)]
         public string Description { set; get; }
+        [Required]
+        [MaxLength(500)]
         public string Keyword { set; get; }
+        [Required]
+        [MaxLength(200)]
         public string Tag { set; get; }
         public bool Index { set; get; }
+        [Required]
+        [MaxLength(200)]
         public string Images { set; get; }
     }
 }

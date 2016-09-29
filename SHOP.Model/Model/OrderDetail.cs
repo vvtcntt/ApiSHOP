@@ -16,6 +16,8 @@ namespace SHOP.Model.Model
         public int id { set; get; }
         public int idOrder { set; get; }
         public int idProduct { set; get; }
+        [Required]
+        [MaxLength(200)]
         public string Name { set; get; }
         public int Quantily  { set; get; }
         public float Price  { set; get; }

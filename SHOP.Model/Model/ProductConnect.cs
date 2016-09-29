@@ -14,9 +14,14 @@ namespace SHOP.Model.Model
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { set; get; }
+
+     
         public int idSyn { set; get; }
-        public string idpd { set; get; }
+
+        public int idpd { set; get; }
+        [Column(TypeName ="ntext")]
         public string Content { set; get; }
+        [Column(TypeName = "ntext")]
         public string Parameter { set; get; }
 
     }

@@ -1,4 +1,5 @@
 ﻿using SHOP.Model.Abstract;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -27,9 +28,11 @@ namespace SHOP.Model.Model
         [Required]
         [MaxLength(500)]
         public string Keyword { set; get; }
-
+        [Column(TypeName ="ntext")]
         public string Content { set; get; }
+        [Column(TypeName = "ntext")]
         public string Info { set; get; }
+        [Column(TypeName = "ntext")]
         public string Parameter { set; get; }
         [Required]
         [MaxLength(500)]
@@ -44,9 +47,18 @@ namespace SHOP.Model.Model
         [Required]
         public float Price { set; get; }
 
-         
+        [Required]
+        [MaxLength(700)]
+
+        public string PriceString { set; get; }
+        
+        [Required]
         public float PriceSale { set; get; }
 
+        [Required]
+        [MaxLength(700)]
+
+        public string PriceSaleString { set; get; }
         public bool Vat { set; get; }
         [Required]
         [MaxLength(50)]
@@ -80,5 +92,7 @@ namespace SHOP.Model.Model
         [MaxLength(500)]
         public string Tabs { set; get; }
         public int idVideo { set; get; }
+        public virtual IEnumerable<ConnectColorProduct> ConnectColorProducts { set; get; }
+        public virtual IEnumerable<ConnectCriteria> ConnectCriterias { set; get; }
     }
 }
