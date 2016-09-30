@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IBanksRepository {
+    public interface IBanksRepository : IRepository<Banks>
+    {
     }
     public class BanksRepository: RepositoryBase<Banks>, IBanksRepository
     {

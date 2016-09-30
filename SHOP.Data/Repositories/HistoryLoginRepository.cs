@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
-{public interface IHistoryLoginRepository { }
+{public interface IHistoryLoginRepository : IRepository<HistoryLogin> { }
    public class HistoryLoginRepository: RepositoryBase<HistoryLogin>, IHistoryLoginRepository
     {
         public HistoryLoginRepository(DbFactory dbFactory):base(dbFactory)

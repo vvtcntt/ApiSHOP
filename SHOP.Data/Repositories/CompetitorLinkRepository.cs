@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface ICompetitorLinkRepository
+    public interface ICompetitorLinkRepository : IRepository<CompetitorLink>
     {
 
     }

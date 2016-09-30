@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Linq;
 namespace SHOP.Data.Repositories
 {
-    public interface iGroupProductRepository
+    public interface iGroupProductRepository : IRepository<GroupProduct>
     {
         IEnumerable<GroupProduct> GetByAlias(string alias);
     }

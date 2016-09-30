@@ -26,3 +26,4 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.Migrations.InitialDB.resources
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.csproj.GenerateResource.Cache
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.Migrations.InitialDB1.resources

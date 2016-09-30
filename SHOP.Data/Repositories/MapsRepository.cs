@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IMapsRepository { }
+    public interface IMapsRepository : IRepository<Maps> { }
     public class MapsRepository:RepositoryBase<Maps>, IMapsRepository
     {
         public MapsRepository(DbFactory dbFactory) : base(dbFactory) { }

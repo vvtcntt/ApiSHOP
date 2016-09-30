@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IImageProductRepository { }
+    public interface IImageProductRepository : IRepository<ImageProduct> { }
     public class ImageProductRepository:RepositoryBase<ImageProduct>, IImageProductRepository
     {
         public ImageProductRepository(DbFactory dbFactory) : base(dbFactory) { }

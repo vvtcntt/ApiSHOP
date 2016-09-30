@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IVideoRepository { }
+    public interface IVideoRepository : IRepository<Video> { }
     public class VideoRepository:RepositoryBase<Video>, IVideoRepository
     {
         public VideoRepository(DbFactory dbFactory) : base(dbFactory) {  }

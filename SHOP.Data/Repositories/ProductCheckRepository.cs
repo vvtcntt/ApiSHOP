@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IProductCheckRepository
+    public interface IProductCheckRepository : IRepository<ProductCheck>
     {
 
     }

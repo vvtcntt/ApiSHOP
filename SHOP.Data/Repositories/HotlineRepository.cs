@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IHotlineRepository { }
+    public interface IHotlineRepository : IRepository<Hotline> { }
     public class HotlineRepository:RepositoryBase<Hotline>
     {
         public HotlineRepository(DbFactory dbFactory) : base(dbFactory) { }

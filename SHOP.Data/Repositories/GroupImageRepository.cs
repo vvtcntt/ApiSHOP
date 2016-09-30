@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
-{public interface IGroupImageRepository { }
+{public interface IGroupImageRepository : IRepository<GroupImage> { }
     public class GroupImageRepository:RepositoryBase<GroupImage>, IGroupImageRepository
     {
         public GroupImageRepository(DbFactory dbFactory):base(dbFactory)

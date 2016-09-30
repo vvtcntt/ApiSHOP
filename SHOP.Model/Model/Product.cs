@@ -45,7 +45,7 @@ namespace SHOP.Model.Model
         public string ImageLinkDetail { set; get; }
 
         [Required]
-        public float Price { set; get; }
+        public int Price { set; get; }
 
         [Required]
         [MaxLength(700)]
@@ -53,7 +53,7 @@ namespace SHOP.Model.Model
         public string PriceString { set; get; }
         
         [Required]
-        public float PriceSale { set; get; }
+        public int PriceSale { set; get; }
 
         [Required]
         [MaxLength(700)]

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface ICriteriaRepository { }
+    public interface ICriteriaRepository : IRepository<Criteria> { }
     public class CriteriaRepository:RepositoryBase<Criteria>, ICriteriaRepository
     {
         public CriteriaRepository(DbFactory dbFactory) : base(dbFactory)

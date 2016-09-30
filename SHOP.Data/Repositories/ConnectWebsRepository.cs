@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IConnectWebsRepository { }
+    public interface IConnectWebsRepository : IRepository<ConnectWebs> { }
    public class ConnectWebsRepository:RepositoryBase<ConnectWebs>, IConnectWebsRepository
     {
         public ConnectWebsRepository(DbFactory dbFactory):base(dbFactory)

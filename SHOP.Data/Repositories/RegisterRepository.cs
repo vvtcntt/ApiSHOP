@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IRegisterRepository
+    public interface IRegisterRepository : IRepository<Register>
     {
     }
    public class RegisterRepository:RepositoryBase<Register>, IRegisterRepository

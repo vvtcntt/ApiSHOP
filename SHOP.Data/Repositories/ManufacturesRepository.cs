@@ -3,7 +3,7 @@ using SHOP.Model.Model;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IManufacturesRepository { }
+    public interface IManufacturesRepository : IRepository<Manufactures> { }
 
     public class ManufacturesRepository : RepositoryBase<Manufactures>, IManufacturesRepository
     {

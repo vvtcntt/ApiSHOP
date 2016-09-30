@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IGroupNewsRepository
+    public interface IGroupNewsRepository : IRepository<GroupNews>
     {
 
     }

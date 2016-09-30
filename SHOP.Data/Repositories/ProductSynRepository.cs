@@ -3,7 +3,7 @@ using SHOP.Model.Model;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IProductSynRepository { }
+    public interface IProductSynRepository : IRepository<ProductSyn> { }
 
     public class ProductSynRepository : RepositoryBase<ProductSyn>, IProductSynRepository
     {

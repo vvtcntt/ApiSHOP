@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SHOP.Data.Repositories
 {
-    public interface IGroupAgencyRepository { }
+    public interface IGroupAgencyRepository : IRepository<GroupAgency> { }
  public class GroupAgencyRepository:RepositoryBase<GroupAgency>, IGroupAgencyRepository
     {
         public GroupAgencyRepository(DbFactory dbFactory):base(dbFactory)
