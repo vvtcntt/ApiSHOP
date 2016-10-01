@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Linq;
 namespace SHOP.Data.Repositories
 {
-    public interface iGroupProductRepository : IRepository<GroupProduct>
+    public interface IGroupProductRepository : IRepository<GroupProduct>
     {
         IEnumerable<GroupProduct> GetByAlias(string alias);
     }
-    class GroupProductRepository : RepositoryBase<GroupProduct>,iGroupProductRepository
+    class GroupProductRepository : RepositoryBase<GroupProduct>, IGroupProductRepository
     {
         
         public GroupProductRepository(DbFactory dbFactory):base(dbFactory)

@@ -17,6 +17,7 @@ namespace SHOP.Service
         IEnumerable<Product> GetALL();
         IEnumerable<Product> GetAllPaging(int page, int pageSize, out int totallRow);
         Product GetById(int id);
+        IEnumerable<Product> GetAllByIdPaging(int idCate, int page, int pageSize, out int totallRow);
 
         IEnumerable<Product> GetAllByTagPaging(string tag,int page, int pageSize, out int totalRow);
         void SaveChanges();
@@ -45,9 +46,14 @@ namespace SHOP.Service
             return _productRepository.GetAll(new string[] { "GroupProduct" });
         }
 
+        public IEnumerable<Product> GetAllByIdPaging(int idCate, int page, int pageSize, out int totallRow)
+        {
+            return _productRepository.GetMultiPaging(x=>x.Active && x.idCate== idCate,out totallRow,page,pageSize,new string[] {"GroupProduct" });
+         }
+
         public IEnumerable<Product> GetAllByTagPaging(string tag,int page, int pageSize, out int totalRow)
         {
-            return _productRepository.GetMultiPaging(x=>x.Active,out totalRow,page,pageSize);
+            return _productRepository.GetAllByTag(tag, page, pageSize, out totalRow);
         }
 
         public IEnumerable<Product> GetAllPaging(int page, int pageSize, out int totalRow)

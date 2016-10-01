@@ -11,7 +11,7 @@ namespace SHOP.Model.Model
         public virtual IEnumerable<Product> Products { set; get; }
         public virtual IEnumerable<ProductCheck> ProductChecks { set; get; }
 
-        public int idCate { set; get; }
+        public int ParentID { set; get; }
 
         [Required]
         [MaxLength(200)]
