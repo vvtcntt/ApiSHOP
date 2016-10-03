@@ -102,3 +102,10 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\obj\Debug\SHOP.UnitTest.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\obj\Debug\SHOP.UnitTest.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\SHOP.UnitTest.dll.config
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Castle.Core.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.SqlServer.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Moq.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Castle.Core.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Moq.xml
