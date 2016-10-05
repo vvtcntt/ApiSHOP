@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectNewsRepository : IRepository<ConnectNews> { }
     public class ConnectNewsRepository:RepositoryBase<ConnectNews>, IConnectNewsRepository
     {
-        public ConnectNewsRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectNewsRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 

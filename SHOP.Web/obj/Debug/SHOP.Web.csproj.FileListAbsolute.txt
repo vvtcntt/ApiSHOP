@@ -140,3 +140,16 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\System.Web.Http.WebHost.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\obj\Debug\SHOP.Web.csprojResolveAssemblyReference.cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\obj\Debug\SHOP.Web.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\obj\Debug\SHOP.Web.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.Integration.Mvc.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.Integration.WebApi.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.Integration.Mvc.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Autofac.Integration.WebApi.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Microsoft.Owin.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Owin.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Microsoft.Owin.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\AutoMapper.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Web\bin\AutoMapper.xml

@@ -10,6 +10,7 @@ namespace SHOP.Model.Model
         [Required]
         [MaxLength(500)]
         public string code { set; get; }
+
         public bool AutoPlay { set; get; }
     }
 }

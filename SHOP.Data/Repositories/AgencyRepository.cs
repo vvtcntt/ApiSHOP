@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IAgencyRepository : IRepository<Agency> { }
     public class AgencyRepository:RepositoryBase<Agency>, IAgencyRepository
     {
-        public AgencyRepository(DbFactory dbFacroty):base(dbFacroty)
+        public AgencyRepository(IDbFactory dbFacroty):base(dbFacroty)
         {
 
         }

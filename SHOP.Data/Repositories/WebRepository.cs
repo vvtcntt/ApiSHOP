@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
     public class WebRepository:RepositoryBase<Web>, IWebRepository
     {
-        public WebRepository(DbFactory dbFactory):base(dbFactory)
+        public WebRepository(IDbFactory dbFactory):base(dbFactory)
         {  }
     }
 }

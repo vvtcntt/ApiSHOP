@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IContactRepository : IRepository<Contact> { }
    public class ContactRepository:RepositoryBase<Contact>, IContactRepository
     {
-        public ContactRepository (DbFactory dbFactory):base(dbFactory)
+        public ContactRepository (IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

@@ -7,7 +7,7 @@ namespace SHOP.Data.Repositories
 
     public class GroupChildRepository : RepositoryBase<GroupChild>, IGroupChildRepository
     {
-        public GroupChildRepository(DbFactory dbFactory) : base(dbFactory)
+        public GroupChildRepository(IDbFactory dbFactory) : base(dbFactory)
         { }
     }
 }

@@ -68,6 +68,7 @@
     <Compile Include="Model\ConnectWebs.cs" />
     <Compile Include="Model\Contact.cs" />
     <Compile Include="Model\Criteria.cs" />
+    <Compile Include="Model\Error.cs" />
     <Compile Include="Model\Files.cs" />
     <Compile Include="Model\GroupAgency.cs" />
     <Compile Include="Model\GroupChild.cs" />

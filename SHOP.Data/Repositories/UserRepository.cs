@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface IUserRepository : IRepository<User> { }
    public class UserRepository:RepositoryBase<User>, IUserRepository
     {
-        public UserRepository(DbFactory dbFactory) : base(dbFactory) {  }
+        public UserRepository(IDbFactory dbFactory) : base(dbFactory) {  }
     }
 }

@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
    public class CompetitorLinkRepository:RepositoryBase<CompetitorLink>, ICompetitorLinkRepository
     {
-        public CompetitorLinkRepository(DbFactory dbFactory):base(dbFactory)
+        public CompetitorLinkRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

@@ -5,6 +5,6 @@ D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Common\obj\Debug\SHOP.Common.dll
 D:\Data\MVC\ProjectMVCApi\SHOP\SHOP.Common\obj\Debug\SHOP.Common.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\bin\Debug\SHOP.Common.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\bin\Debug\SHOP.Common.pdb
-D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\obj\Debug\SHOP.Common.csprojResolveAssemblyReference.cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\obj\Debug\SHOP.Common.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\obj\Debug\SHOP.Common.pdb
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Common\obj\Debug\SHOP.Common.csprojResolveAssemblyReference.cache

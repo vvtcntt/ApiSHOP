@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface ISupportRepository : IRepository<Support> { }
    public class SupportRepository:RepositoryBase<Support>, ISupportRepository
     {
-        public SupportRepository(DbFactory dbFactory) : base(dbFactory) { }
+        public SupportRepository(IDbFactory dbFactory) : base(dbFactory) { }
     }
 }

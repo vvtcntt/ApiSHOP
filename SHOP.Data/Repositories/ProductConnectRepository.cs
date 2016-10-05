@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IProductConnectRepository : IRepository<ProductConnect> { }
    public class ProductConnectRepository:RepositoryBase<ProductConnect>, IProductConnectRepository
     {
-        public ProductConnectRepository(DbFactory dbFactory):base(dbFactory)
+        public ProductConnectRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

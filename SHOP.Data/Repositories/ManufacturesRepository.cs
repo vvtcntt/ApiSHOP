@@ -7,7 +7,7 @@ namespace SHOP.Data.Repositories
 
     public class ManufacturesRepository : RepositoryBase<Manufactures>, IManufacturesRepository
     {
-        public ManufacturesRepository(DbFactory dbFactory) : base(dbFactory)
+        public ManufacturesRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }

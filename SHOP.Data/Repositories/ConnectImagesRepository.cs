@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectImagesRepository : IRepository<ConnectImages> { }
     public class ConnectImagesRepository:RepositoryBase<ConnectImages>
     {
-        public ConnectImagesRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectImagesRepository(IDbFactory dbFactory):base(dbFactory)
         {  }
     }
 }

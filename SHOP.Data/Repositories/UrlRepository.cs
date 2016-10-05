@@ -9,7 +9,7 @@ namespace SHOP.Data.Repositories
 
     public class UrlRepository : RepositoryBase<Url>, IUrlRepository
     {
-        public UrlRepository(DbFactory dbFactory) : base(dbFactory)
+        public UrlRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }

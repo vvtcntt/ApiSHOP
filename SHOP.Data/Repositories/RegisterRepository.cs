@@ -13,6 +13,6 @@ namespace SHOP.Data.Repositories
     }
    public class RegisterRepository:RepositoryBase<Register>, IRegisterRepository
     {
-        public RegisterRepository(DbFactory dbFactory):base(dbFactory){ }
+        public RegisterRepository(IDbFactory dbFactory):base(dbFactory){ }
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SHOP.Data.Infratructure
+﻿namespace SHOP.Data.Infratructure
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -26,5 +20,4 @@ namespace SHOP.Data.Infratructure
             DbContext.SaveChanges();
         }
     }
-
 }

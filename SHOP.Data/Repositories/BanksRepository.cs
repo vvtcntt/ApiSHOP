@@ -13,7 +13,7 @@ namespace SHOP.Data.Repositories
     }
     public class BanksRepository: RepositoryBase<Banks>, IBanksRepository
     {
-        public BanksRepository(DbFactory dbFactory):base(dbFactory)
+        public BanksRepository(IDbFactory dbFactory):base(dbFactory)
         {
 
         }

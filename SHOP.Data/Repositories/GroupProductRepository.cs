@@ -1,25 +1,20 @@
-﻿
-using SHOP.Data.Infratructure;
+﻿using SHOP.Data.Infratructure;
 using SHOP.Model.Model;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq;
+
 namespace SHOP.Data.Repositories
 {
     public interface IGroupProductRepository : IRepository<GroupProduct>
     {
         IEnumerable<GroupProduct> GetByAlias(string alias);
     }
-    class GroupProductRepository : RepositoryBase<GroupProduct>, IGroupProductRepository
-    {
-        
-        public GroupProductRepository(DbFactory dbFactory):base(dbFactory)
-            {
 
-            }
+    public class GroupProductRepository : RepositoryBase<GroupProduct>, IGroupProductRepository
+    {
+        public GroupProductRepository(IDbFactory dbFactory) : base(dbFactory)
+        {
+        }
 
         public IEnumerable<GroupProduct> GetByAlias(string alias)
         {

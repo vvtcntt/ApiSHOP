@@ -109,3 +109,12 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Moq.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Castle.Core.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\EntityFramework.SqlServer.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Moq.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Microsoft.Owin.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Owin.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.Integration.Mvc.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Microsoft.Owin.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.Integration.Mvc.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.Integration.WebApi.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.UnitTest\bin\Debug\Autofac.Integration.WebApi.xml

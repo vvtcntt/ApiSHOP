@@ -1,39 +1,95 @@
-﻿using System;
+﻿using AutoMapper;
+using SHOP.Model.Model;
+using SHOP.Service;
+using SHOP.Web.Infrastructure.Core;
+using SHOP.Web.Models;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using SHOP.Web.Infrastructure.Extentions;
 namespace SHOP.Web.Api
 {
-    public class GroupProductController : ApiController
+    [RoutePrefix("api/groupproduct")]
+    public class GroupProductController : ApiControllerBase
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        private IGroupProductService _groupProductService;
 
-        // GET api/<controller>/5
-        public string Get(int id)
+        public GroupProductController(IErrorService errorService,IGroupProductService groupProductService) : base(errorService)
         {
-            return "value";
+            this._groupProductService = groupProductService;
         }
-
-        // POST api/<controller>
-        public void Post([FromBody]string value)
+        [Route("getall")]
+        public HttpResponseMessage Get(HttpRequestMessage request )
         {
+            return CreateHttpReponse(request, () =>
+            {
+
+                var listGroupProduct = _groupProductService.GetAll();
+                var listGroupProductVm = Mapper.Map<List<GroupProductViewModel>>(listGroupProduct);
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listGroupProduct);
+                return response;
+            });
         }
-
-        // PUT api/<controller>/5
-        public void Put(int id, [FromBody]string value)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request, GroupProductViewModel groupProductVm)
         {
+            return CreateHttpReponse(request, () =>
+             {
+                 HttpResponseMessage response = null;
+                if(ModelState.IsValid)
+                 {
+                     request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                 }
+                else
+                 {
+                     GroupProduct newGroupProduct = new GroupProduct();
+                     newGroupProduct.UpdateGroupProduct(groupProductVm);
+                    var groupproduct = _groupProductService.Add(newGroupProduct);
+                     _groupProductService.Save();
+                     response = request.CreateResponse(HttpStatusCode.Created, groupproduct);
+                 }
+                 return response;
+             });
         }
-
-        // DELETE api/<controller>/5
-        public void Delete(int id)
+        [Route("update")]
+        public HttpResponseMessage Put(HttpRequestMessage request,   GroupProductViewModel groupProductVm)
         {
+            return CreateHttpReponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (ModelState.IsValid)
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var groupProductDb = _groupProductService.GetById(groupProductVm.id);
+                    groupProductDb.UpdateGroupProduct(groupProductVm);
+                    _groupProductService.Save();
+                    response = request.CreateResponse(HttpStatusCode.OK);
+                }
+                return response;
+            });
+        }
+        public HttpResponseMessage Delete(HttpRequestMessage request, int id)
+        {
+            return CreateHttpReponse(request, () =>
+            {
+                HttpResponseMessage response = null;
+                if (ModelState.IsValid)
+                {
+                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+                }
+                else
+                {
+                    var groupproduct = _groupProductService.Delete(id);
+
+                    _groupProductService.Save();
+                    response = request.CreateResponse(HttpStatusCode.OK);
+                }
+                return response;
+            });
         }
     }
 }

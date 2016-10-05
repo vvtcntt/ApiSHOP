@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface IHotlineRepository : IRepository<Hotline> { }
     public class HotlineRepository:RepositoryBase<Hotline>
     {
-        public HotlineRepository(DbFactory dbFactory) : base(dbFactory) { }
+        public HotlineRepository(IDbFactory dbFactory) : base(dbFactory) { }
     }
 }

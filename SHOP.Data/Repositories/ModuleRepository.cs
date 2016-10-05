@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface IModuleRepository : IRepository<Module> { }
     public class ModuleRepository:RepositoryBase<Module>, IModuleRepository
     {
-        public ModuleRepository(DbFactory dbFactory) : base(dbFactory) { }
+        public ModuleRepository(IDbFactory dbFactory) : base(dbFactory) { }
     }
 }

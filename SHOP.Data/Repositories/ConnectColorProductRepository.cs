@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectColorProductRepository : IRepository<ConnectColorProduct> { }
     public class ConnectColorProductRepository:RepositoryBase<ConnectColorProduct>, IConnectColorProductRepository
     {
-        public ConnectColorProductRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectColorProductRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

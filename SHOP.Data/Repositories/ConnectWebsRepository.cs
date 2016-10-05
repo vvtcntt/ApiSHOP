@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectWebsRepository : IRepository<ConnectWebs> { }
    public class ConnectWebsRepository:RepositoryBase<ConnectWebs>, IConnectWebsRepository
     {
-        public ConnectWebsRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectWebsRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

@@ -22,3 +22,4 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\obj\Debug\SHOP.Service.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\obj\Debug\SHOP.Service.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\EntityFramework.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\EntityFramework.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Service\bin\Debug\SHOP.Service.dll.config

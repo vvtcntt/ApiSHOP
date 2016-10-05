@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface ICriteriaRepository : IRepository<Criteria> { }
     public class CriteriaRepository:RepositoryBase<Criteria>, ICriteriaRepository
     {
-        public CriteriaRepository(DbFactory dbFactory) : base(dbFactory)
+        public CriteriaRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }

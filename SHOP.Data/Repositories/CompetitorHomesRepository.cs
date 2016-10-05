@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
     public class CompetitorHomesRepository:RepositoryBase<CompetitorHomes>, ICompetitorHomesRepository
     {
-        public CompetitorHomesRepository(DbFactory dbfactory ):base(dbfactory)
+        public CompetitorHomesRepository(IDbFactory dbfactory ):base(dbfactory)
         {
 
         }

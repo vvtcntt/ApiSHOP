@@ -10,7 +10,7 @@ namespace SHOP.Data.Repositories
 {public interface IGroupImageRepository : IRepository<GroupImage> { }
     public class GroupImageRepository:RepositoryBase<GroupImage>, IGroupImageRepository
     {
-        public GroupImageRepository(DbFactory dbFactory):base(dbFactory)
+        public GroupImageRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

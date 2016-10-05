@@ -10,7 +10,7 @@ namespace SHOP.Data.Repositories
 {public interface IHistoryLoginRepository : IRepository<HistoryLogin> { }
    public class HistoryLoginRepository: RepositoryBase<HistoryLogin>, IHistoryLoginRepository
     {
-        public HistoryLoginRepository(DbFactory dbFactory):base(dbFactory)
+        public HistoryLoginRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

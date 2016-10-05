@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
     public class ProductCheckRepository:RepositoryBase<ProductCheck>,IProductCheckRepository
     {
-        public ProductCheckRepository(DbFactory dbFactory):base(dbFactory)
+        public ProductCheckRepository(IDbFactory dbFactory):base(dbFactory)
         {
 
         }

@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface IVideoRepository : IRepository<Video> { }
     public class VideoRepository:RepositoryBase<Video>, IVideoRepository
     {
-        public VideoRepository(DbFactory dbFactory) : base(dbFactory) {  }
+        public VideoRepository(IDbFactory dbFactory) : base(dbFactory) {  }
     }
 }

@@ -16,31 +16,41 @@ namespace SHOP.Model.Model
         [Required]
         [MaxLength(200)]
         public string Title { set; get; }
+
         [Required]
         [MaxLength(500)]
         public string Description { set; get; }
+
         [Required]
         [MaxLength(500)]
         public string Keyword { set; get; }
-        [Column(TypeName ="ntext")]
+
+        [Column(TypeName = "ntext")]
         public string Content { set; get; }
+
         [Required]
         [MaxLength(200)]
         public string Tag { set; get; }
+
         public int Level { set; get; }
         public bool Priority { set; get; }
+
         [Required]
         [MaxLength(200)]
         public string Images { set; get; }
+
         [Required]
         [MaxLength(200)]
         public string Background { set; get; }
+
         [Required]
         [MaxLength(200)]
         public string iCon { set; get; }
+
         [Required]
         [MaxLength(100)]
         public string Color { set; get; }
+
         [Required]
         [MaxLength(200)]
         public string Alias { set; get; }

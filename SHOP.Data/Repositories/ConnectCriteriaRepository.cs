@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectCriteriaRepository : IRepository<ConnectCriteria> { }
     public class ConnectCriteriaRepository:RepositoryBase<ConnectCriteria>
     {
-        public ConnectCriteriaRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectCriteriaRepository(IDbFactory dbFactory):base(dbFactory)
         {
 
         }

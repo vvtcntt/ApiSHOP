@@ -7,7 +7,7 @@ namespace SHOP.Data.Repositories
 
     public class RightRepository : RepositoryBase<Right>, IRightRepository
     {
-        public RightRepository(DbFactory dbFactory) : base(dbFactory)
+        public RightRepository(IDbFactory dbFactory) : base(dbFactory)
         { }
     }
 }

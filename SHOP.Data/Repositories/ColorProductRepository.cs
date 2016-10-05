@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IColorProductRepository : IRepository<ColorProduct> { }
     class ColorProductRepository:RepositoryBase<ColorProduct>, IColorProductRepository
     {
-        public ColorProductRepository(DbFactory dbFactory):base(dbFactory)
+        public ColorProductRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

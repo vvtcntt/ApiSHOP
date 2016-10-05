@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
     public class GroupNewsRepository:RepositoryBase<GroupNews>,IGroupNewsRepository
     {
-        public GroupNewsRepository(DbFactory dbFacroty):base(dbFacroty)
+        public GroupNewsRepository(IDbFactory dbFacroty):base(dbFacroty)
         {
 
         }

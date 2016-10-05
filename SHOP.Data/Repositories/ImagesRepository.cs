@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IImagesRepository : IRepository<Images> { }
    public class ImagesRepository:RepositoryBase<Images>
     {
-        public ImagesRepository(DbFactory dbFactory):base(dbFactory)
+        public ImagesRepository(IDbFactory dbFactory):base(dbFactory)
         { }
     }
 }

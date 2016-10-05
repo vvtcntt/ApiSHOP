@@ -11,7 +11,7 @@ namespace SHOP.Data.Repositories
     public interface IConnectGroupRepository : IRepository<ConnectGroup> { }
    public class ConnectGroupRepository:RepositoryBase<ConnectGroup>, IConnectGroupRepository
     {
-        public ConnectGroupRepository(DbFactory dbFactory):base(dbFactory)
+        public ConnectGroupRepository(IDbFactory dbFactory):base(dbFactory)
         {  }
     }
 }

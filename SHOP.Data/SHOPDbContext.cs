@@ -60,5 +60,6 @@ namespace SHOP.Data
         public DbSet<User> Users { set; get; }
         public DbSet<Video> Videos { set; get; }
         public DbSet<Web> Webs { set; get; }
+        public DbSet<Error> Errors { set; get; }
     }
 }

@@ -8,22 +8,29 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SHOP.Service
-{  
+{
     public interface IGroupProductService
     {
-        void Add(GroupProduct groupProduct);
+        GroupProduct Add(GroupProduct groupProduct);
         void Update(GroupProduct groupProduct);
-        void Delete(int id);
+        GroupProduct Delete(int id);
         IEnumerable<GroupProduct> GetAll();
         IEnumerable<GroupProduct> GetAllByParentId(int parentId);
         GroupProduct GetById(int id);
 
-
+        void Save();
     }
-    class GroupProductService : IGroupProductService
+    public class GroupProductService : IGroupProductService
     {
-        IGroupProductRepository _groupProductRepository;
-        IUnitOfWork _unitOfWork;
+        private IGroupProductRepository _groupProductRepository;
+        private IUnitOfWork _unitOfWork;
+
+
+        public GroupProductService(IGroupProductRepository groupProductRepository, IUnitOfWork unitOfWork)
+        {
+            this._groupProductRepository = groupProductRepository;
+            this._unitOfWork = unitOfWork;
+        }
         public void Add(GroupProduct groupProduct)
         {
             _groupProductRepository.Add(groupProduct);
@@ -36,22 +43,37 @@ namespace SHOP.Service
 
         public IEnumerable<GroupProduct> GetAll()
         {
-          return  _groupProductRepository.GetAll();
+            return _groupProductRepository.GetAll();
         }
 
         public IEnumerable<GroupProduct> GetAllByParentId(int parentId)
         {
             return _groupProductRepository.GetMulti(x => x.Active == true && x.ParentID == parentId);
-         }
+        }
 
         public GroupProduct GetById(int id)
         {
             return _groupProductRepository.GetSingleById(id);
         }
 
+        public void Save()
+        {
+            _unitOfWork.Commit();
+        }
+
         public void Update(GroupProduct groupProduct)
         {
             _groupProductRepository.Update(groupProduct);
+        }
+
+        GroupProduct IGroupProductService.Add(GroupProduct groupProduct)
+        {
+            throw new NotImplementedException();
+        }
+
+        GroupProduct IGroupProductService.Delete(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

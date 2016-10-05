@@ -7,7 +7,7 @@ namespace SHOP.Data.Repositories
 
     public class ProductSaleRepository : RepositoryBase<ProductSale>
     {
-        public ProductSaleRepository(DbFactory dbFactory) : base(dbFactory)
+        public ProductSaleRepository(IDbFactory dbFactory) : base(dbFactory)
         {
         }
     }

@@ -14,7 +14,7 @@ namespace SHOP.Data.Repositories
     }
    public class NewsRepository:RepositoryBase<News>,INewsRepository
     {
-        public NewsRepository(DbFactory dbFactory):base(dbFactory)
+        public NewsRepository(IDbFactory dbFactory):base(dbFactory)
         {
 
         }

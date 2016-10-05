@@ -11,6 +11,6 @@ namespace SHOP.Data.Repositories
     public interface IInfoCriteriaRepository : IRepository<InfoCriteria> { }
    public class InfoCriteriaRepository:RepositoryBase<InfoCriteria>
     {
-        public InfoCriteriaRepository(DbFactory dbFactory) : base(dbFactory) { }
+        public InfoCriteriaRepository(IDbFactory dbFactory) : base(dbFactory) { }
     }
 }
