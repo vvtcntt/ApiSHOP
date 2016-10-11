@@ -3,7 +3,7 @@ namespace SHOP.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitDb : DbMigration
+    public partial class initalDatabase : DbMigration
     {
         public override void Up()
         {
@@ -808,6 +808,30 @@ namespace SHOP.Data.Migrations
                 .PrimaryKey(t => t.id);
             
             CreateTable(
+                "dbo.IdentityRoles",
+                c => new
+                    {
+                        Id = c.String(nullable: false, maxLength: 128),
+                        Name = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.IdentityUserRoles",
+                c => new
+                    {
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        RoleId = c.String(nullable: false, maxLength: 128),
+                        IdentityRole_Id = c.String(maxLength: 128),
+                        ApplicationUser_Id = c.String(maxLength: 128),
+                    })
+                .PrimaryKey(t => new { t.UserId, t.RoleId })
+                .ForeignKey("dbo.IdentityRoles", t => t.IdentityRole_Id)
+                .ForeignKey("dbo.ApplicationUsers", t => t.ApplicationUser_Id)
+                .Index(t => t.IdentityRole_Id)
+                .Index(t => t.ApplicationUser_Id);
+            
+            CreateTable(
                 "dbo.tblSupport",
                 c => new
                     {
@@ -863,6 +887,55 @@ namespace SHOP.Data.Migrations
                 .PrimaryKey(t => t.id);
             
             CreateTable(
+                "dbo.ApplicationUsers",
+                c => new
+                    {
+                        Id = c.String(nullable: false, maxLength: 128),
+                        FullName = c.String(maxLength: 256),
+                        Birthday = c.DateTime(),
+                        Address = c.String(maxLength: 256),
+                        Email = c.String(),
+                        EmailConfirmed = c.Boolean(nullable: false),
+                        PasswordHash = c.String(),
+                        SecurityStamp = c.String(),
+                        PhoneNumber = c.String(),
+                        PhoneNumberConfirmed = c.Boolean(nullable: false),
+                        TwoFactorEnabled = c.Boolean(nullable: false),
+                        LockoutEndDateUtc = c.DateTime(),
+                        LockoutEnabled = c.Boolean(nullable: false),
+                        AccessFailedCount = c.Int(nullable: false),
+                        UserName = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.IdentityUserClaims",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        UserId = c.String(),
+                        ClaimType = c.String(),
+                        ClaimValue = c.String(),
+                        ApplicationUser_Id = c.String(maxLength: 128),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.ApplicationUsers", t => t.ApplicationUser_Id)
+                .Index(t => t.ApplicationUser_Id);
+            
+            CreateTable(
+                "dbo.IdentityUserLogins",
+                c => new
+                    {
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        LoginProvider = c.String(),
+                        ProviderKey = c.String(),
+                        ApplicationUser_Id = c.String(maxLength: 128),
+                    })
+                .PrimaryKey(t => t.UserId)
+                .ForeignKey("dbo.ApplicationUsers", t => t.ApplicationUser_Id)
+                .Index(t => t.ApplicationUser_Id);
+            
+            CreateTable(
                 "dbo.tblVideo",
                 c => new
                     {
@@ -891,6 +964,10 @@ namespace SHOP.Data.Migrations
         
         public override void Down()
         {
+            DropForeignKey("dbo.IdentityUserRoles", "ApplicationUser_Id", "dbo.ApplicationUsers");
+            DropForeignKey("dbo.IdentityUserLogins", "ApplicationUser_Id", "dbo.ApplicationUsers");
+            DropForeignKey("dbo.IdentityUserClaims", "ApplicationUser_Id", "dbo.ApplicationUsers");
+            DropForeignKey("dbo.IdentityUserRoles", "IdentityRole_Id", "dbo.IdentityRoles");
             DropForeignKey("dbo.tblProductCheck", "id", "dbo.tblGroupProduct");
             DropForeignKey("dbo.tblNews", "id", "dbo.tblGroupNews");
             DropForeignKey("dbo.tblImages", "id", "dbo.tblGroupImage");
@@ -902,6 +979,10 @@ namespace SHOP.Data.Migrations
             DropForeignKey("dbo.tblCompetitorLink", "idCompetitor", "dbo.tblCompetitor");
             DropForeignKey("dbo.tblCompetitorLink", "idHomes", "dbo.CompetitorHomes");
             DropForeignKey("dbo.tblAgency", "GroupAgency_id", "dbo.GroupAgency");
+            DropIndex("dbo.IdentityUserLogins", new[] { "ApplicationUser_Id" });
+            DropIndex("dbo.IdentityUserClaims", new[] { "ApplicationUser_Id" });
+            DropIndex("dbo.IdentityUserRoles", new[] { "ApplicationUser_Id" });
+            DropIndex("dbo.IdentityUserRoles", new[] { "IdentityRole_Id" });
             DropIndex("dbo.tblProductCheck", new[] { "id" });
             DropIndex("dbo.tblNews", new[] { "id" });
             DropIndex("dbo.tblImages", new[] { "id" });
@@ -915,9 +996,14 @@ namespace SHOP.Data.Migrations
             DropIndex("dbo.tblAgency", new[] { "GroupAgency_id" });
             DropTable("dbo.tblWeb");
             DropTable("dbo.tblVideo");
+            DropTable("dbo.IdentityUserLogins");
+            DropTable("dbo.IdentityUserClaims");
+            DropTable("dbo.ApplicationUsers");
             DropTable("dbo.tblUser");
             DropTable("dbo.tblUrl");
             DropTable("dbo.tblSupport");
+            DropTable("dbo.IdentityUserRoles");
+            DropTable("dbo.IdentityRoles");
             DropTable("dbo.tblRight");
             DropTable("dbo.tblRegister");
             DropTable("dbo.tblProductSyn");

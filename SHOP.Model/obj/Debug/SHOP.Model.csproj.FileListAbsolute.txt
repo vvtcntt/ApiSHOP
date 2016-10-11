@@ -18,3 +18,7 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.SqlServer.d
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\EntityFramework.SqlServer.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\obj\Debug\SHOP.Model.csprojResolveAssemblyReference.cache
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

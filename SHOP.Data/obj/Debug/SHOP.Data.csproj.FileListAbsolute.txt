@@ -26,8 +26,6 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.pdb
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Autofac.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Autofac.xml
-D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.Migrations.InitDb.resources
-D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.csproj.GenerateResource.Cache
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Autofac.Integration.WebApi.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Newtonsoft.Json.dll
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\System.Net.Http.Formatting.dll
@@ -36,3 +34,9 @@ D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Autofac.Integration.WebApi.x
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Newtonsoft.Json.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\System.Net.Http.Formatting.xml
 D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\System.Web.Http.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.Migrations.initalDatabase.resources
+D:\Data\MVC\CodeWeb\SHOP\Github\SHOP.Data\obj\Debug\SHOP.Data.csproj.GenerateResource.Cache
